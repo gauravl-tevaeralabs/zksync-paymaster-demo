@@ -1,0 +1,12 @@
+{
+  "name": "demp",
+  "version": "1.0.0",
+  "license": "MIT",
+  "dependencies": {
+    "ethers": "^6.12.1",
+    "zksync-ethers": "^6.7.1"
+  },
+  "scripts": {
+    "start": "node ./index.js"
+  }
+}

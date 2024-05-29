@@ -1,0 +1,5 @@
+{
+  "zksyncRpcUrl": "https://sepolia.era.zksync.dev",
+  "paymasterContractAddress": "0x0e5F7BE0eA8FdA7073cC9844D671c900272DEb01",
+  "tevaQuestRegistryContractAddress": "0x26e0D74C31faEFb564f181c1c2954734fC8fa0ef"
+}
