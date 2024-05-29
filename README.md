@@ -24,10 +24,18 @@ npm install
 }
 ```
 
-5. Now execute the following in your terminal window:
+5. Navigate to zksync-web3 folder, and execute the following in your terminal window:
 
 ```
 npm run start
 ```
 
-This will run the function.
+This will register the quest on-chain with a new wallet that has no ETH balance, as the gas is funded by the paymaster.
+
+6. Navigate to zksync-ethers folder, and execute the following in your terminal window:
+
+```
+npm run start
+```
+
+This will attempt to register the quest on-chain with a new wallet that has no ETH balance, but it will fail, stating insufficient balance because it tries to pay for gas from the newly created wallet instead of using a paymaster.
