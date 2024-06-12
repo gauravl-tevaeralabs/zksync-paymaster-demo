@@ -47,12 +47,10 @@ async function registerQuestUsingPaymaster() {
   // create zksync provider
   const provider = new Provider(zksyncRpcUrl);
   // generate random wallet
-  const wallet = Wallet.createRandom();
-  // connect wallet to provider
-  const connectedWallet = wallet.connect(provider);
+  const wallet = new Wallet(Wallet.createRandom().privateKey, provider, null);
 
   // register quest with newly generated wallet
-  await registerQuest(connectedWallet);
+  await registerQuest(wallet);
 }
 
 // Handler
